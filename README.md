@@ -9,12 +9,8 @@ A Drupal 8 site with a Pattern Lab Twig theme.
 ### Prerequisites
 
 - `composer` installed
-- `drush` installed`
+- `drush` installed
 - drupal console installed - aliased to `drupal`
-
-### Install dependencies
-
-    composer install
 
 ### Site Install
 
