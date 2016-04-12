@@ -1,7 +1,7 @@
 uuid: 681aab20-62fb-495e-b526-c1ce809f32ca
-name: Site-Install
+name: 'Drupal Lab'
 mail: admin@example.com
-slogan: ''
+slogan: 'Drupal 8 + Pattern Lab Twig'
 page:
   403: ''
   404: ''
