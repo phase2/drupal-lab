@@ -1,8 +1,6 @@
 .DS_Store
 .idea
-config/*
 export/*
 packages/*
 public/*
-source/*
 vendor/*
