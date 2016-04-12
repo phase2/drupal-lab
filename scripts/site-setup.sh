@@ -8,4 +8,4 @@ echo "Creating content..."
 drupal chain --file=../scripts/create-content.yml
 echo "Importing configuration..."
 drupal config:import -y
-echo "All done; fire off 'drupal server' for a server. Login is 'admin:admin'."
+echo "All done; fire off 'drupal server' in 'web/' for a server. Login is 'admin:admin'."
