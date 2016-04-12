@@ -2,6 +2,8 @@
 
 A Drupal 8 site with a Pattern Lab Twig theme.
 
+**All commands starting with `bash` are ran from root of repo; all that start with `drupal` are ran from `web/`**
+
 ## Setup
 
 ### Prerequisites
@@ -13,16 +15,25 @@ A Drupal 8 site with a Pattern Lab Twig theme.
 
     composer install
 
+### Site Install
+
+		bash scripts/site-setup.sh
+
 ## Usage
 
 ### Run Server
 
-Either set up your own Apache server to point towards the `web/` directory, or run `drupal server` in `web/`.
+- Run `drupal server` in `web/` OR:
+- Set up your own Apache server to point towards the `web/` directory.
 
 ### Credentials
 
 - Username: `admin`
 - Password: `admin`
+
+### Rebuild
+
+		bash scripts/site-reinstall.sh
 
 ## Configuration
 
