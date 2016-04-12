@@ -5,5 +5,7 @@ description: 'A base theme with sensible default CSS classes added and semantic 
 core: 8.x
 
 # Libraries
+libraries:
+  - dashing/bootstrap-cdn
 
 # Regions
