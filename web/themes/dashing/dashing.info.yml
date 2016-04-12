@@ -1,0 +1,9 @@
+# THEMENAME.info.yml
+name: Dashing
+type: theme
+description: 'A base theme with sensible default CSS classes added and semantic HTML.'
+core: 8.x
+
+# Libraries
+
+# Regions
