@@ -3,4 +3,5 @@
 cd web/
 echo "Dropping DB..."
 drupal database:drop -y
-bash ../scripts/site-setup.sh
+cd ../
+bash scripts/site-setup.sh
