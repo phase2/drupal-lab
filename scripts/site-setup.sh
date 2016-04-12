@@ -11,6 +11,9 @@ echo ""
 echo "Importing configuration..."
 drupal config:import -y
 echo ""
+echo "Rebuilding cache..."
+drupal cache:rebuild all
+echo ""
 echo "Setting up Pattern Lab..."
 cd themes/dashing/pattern-lab
 composer install
