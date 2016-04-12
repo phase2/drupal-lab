@@ -1,0 +1,22 @@
+uuid: 722dfb17-340e-4c59-8eaa-edae84585cd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - dashing
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: dashing_help
+theme: dashing
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
