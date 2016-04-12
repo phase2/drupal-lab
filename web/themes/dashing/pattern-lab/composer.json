@@ -1,0 +1,64 @@
+{
+    "name":             "pattern-lab/edition-drupal-standard",
+    "description":      "Standard Edition of Pattern Lab for Drupal.",
+    "keywords":         ["pattern lab", "drupal"],
+    "homepage":         "http://patternlab.io",
+    "license":          "GPL-2.0+",
+    "type":             "project",
+    "authors": [
+        {
+            "name":         "Dave Olsen",
+            "email":        "dmolsen@gmail.com",
+            "homepage":     "http://dmolsen.com",
+            "role":         "Lead Developer"
+        },
+        {
+            "name":         "Aleksi Peebles",
+            "homepage":     "http://www.aleksip.net"
+        }
+    ],
+    "support": {
+        "issues":         "https://github.com/pattern-lab/edition-drupal-standard/issues",
+        "wiki":           "http://patternlab.io/docs/",
+        "source":         "https://github.com/pattern-lab/edition-drupal-standard/releases"
+    },
+    "autoload": {
+        "psr-0": {
+            "PatternLab":   "core/src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.3.6",
+        "pattern-lab/core": "0.*",
+        "pattern-lab/patternengine-twig": "~0.7",
+        "pattern-lab/styleguidekit-twig-default": "0.*",
+        "aleksip/plugin-data-transform": "dev-master"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "PatternLab\\Installer::postCreateProjectCmd"
+        ],
+        "post-package-install": [
+            "PatternLab\\Installer::postPackageInstall"
+        ],
+        "post-package-update": [
+            "PatternLab\\Installer::postPackageUpdate"
+        ],
+        "pre-install-cmd": [
+            "PatternLab\\Installer::preInstallCmd"
+        ],
+        "pre-package-uninstall": [
+            "PatternLab\\Installer::prePackageUninstall"
+        ]
+    },
+    "extra": {
+        "patternlab": {
+            "starterKitSuggestions": [
+                "pattern-lab/starterkit-twig-drupal-minimal",
+                "aleksip/starterkit-shila-drupal-theme"
+            ]
+        }
+    }
+}
