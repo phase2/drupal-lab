@@ -3,7 +3,7 @@
 composer install
 cd web/
 echo "Installing site..."
-drupal chain --file=../scripts/site-install.yml
+drush site-install --account-name=admin --account-pass=admin  -y
 echo "Creating content..."
 drupal chain --file=../scripts/create-content.yml
 echo "Importing configuration..."
