@@ -1,0 +1,84 @@
+css:
+  enabled: true
+  src:
+    - scss/**/*.scss
+  dest: dist/
+  flattenDestOutput: true
+  lint:
+    enabled: false
+    failOnError: true
+    # Add to the main src glob - useful for exclusions with `!`
+#    extraSrc:
+#      - '!src/scss/00-config/02-variables/_typography.scss'
+  # enables additional debugging information in the output file as CSS comments - only use when necessary
+  sourceComments: false
+  sourceMapEmbed: false
+  # tell the compiler whether you want 'expanded' or 'compressed' output code
+  outputStyle: expanded
+  autoPrefixerBrowsers: # https://github.com/ai/browserslist#queries
+    - last 2 versions
+    - IE >= 11
+  includePaths:
+    - ./node_modules
+    - ./bower_components
+  sassdoc: # http://sassdoc.com
+    enabled: false
+js:
+  enabled: false
+patternLab:
+  enabled: true
+  engine: php-twig
+  src:
+    root: pattern-lab/
+    source: pattern-lab/source/
+icons: # https://github.com/nfroidure/gulp-iconfont
+  enabled: false
+  src: src/images/icons/src/*.svg
+  dest: dest/
+  fontPathPrefix: ''
+  classNamePrefix: icon
+  autohint: false
+  normalize: true
+  templates:
+    enabled: true
+    css:
+      src: src/images/icons/templates/_icons.scss
+      dest: src/scss/00-config/
+    demo:
+      src: src/images/icons/templates/icons.mustache
+      dest: src/patterns/00-atoms/04-images/
+  formats:
+    - ttf
+    - eot
+    - woff
+    - svg
+browserSync:
+  enabled: true
+  port: 3050
+  watchFiles:
+    # - template.php
+  # domain: mysite.dev # enable when full CMS is set up
+  baseDir: ./
+  startPath: pattern-lab/public
+  openBrowserAtStart: false
+  # requires above to be true; allows non-default browser to open
+  browser:
+    - Google Chrome
+  # Tunnel the Browsersync server through a random Public URL
+  # -> http://randomstring23232.localtunnel.me
+  tunnel: false
+  reloadDelay: 50
+  reloadDebounce: 750
+drupal:
+  enabled: false
+  # when these files change
+  watch:
+    - template.php
+    - templates/**
+  # run this command
+  command: drush cc all
+  # in this directory
+  dir: ./
+  inject:
+    bower: false
+    file: theme.info

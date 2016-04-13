@@ -6,6 +6,7 @@ core: 8.x
 
 # Libraries
 libraries:
-  - dashing/bootstrap-cdn
+  - dashing/core
+  - dashing/bootstrap
 
 # Regions

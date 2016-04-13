@@ -18,7 +18,7 @@ A Drupal 8 site with a Pattern Lab Twig theme.
 
 ## Usage
 
-### Run Server
+### Run Drupal Server
 
 - Run `drupal server` in `web/` OR:
 - Set up your own Apache server to point towards the `web/` directory.
@@ -31,6 +31,18 @@ A Drupal 8 site with a Pattern Lab Twig theme.
 ### Rebuild
 
 		bash scripts/site-reinstall.sh
+
+### Theme & Pattern Lab
+
+All commands ran from root of theme in `web/themes/dashing/`. An `npm install` was ran in `site-setup.sh` script, run `npm install` if you don't see `node_modules/` or have errors.
+
+To compile theme (CSS & Pattern Lab):
+
+		npm run compile
+
+To execute watches on Scss and Pattern Lab along with a server for Pattern Lab, run:
+
+		npm start
 
 ## Configuration
 
