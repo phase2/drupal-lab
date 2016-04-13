@@ -25,6 +25,7 @@ composer install
 echo ""
 
 echo "Setting up theme tools..."
+cd ..
 npm install
 echo ""
 
