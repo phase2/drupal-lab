@@ -61,18 +61,24 @@
   <main class="row" role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content col-md-8">
+    {% if page.sidebar_first and page.sidebar_second %}
+    <div class="layout-content col-md-6">
+    {% elseif page.sidebar_first or page.sidebar_second %}
+    <div class="layout-content col-md-9">
+    {% else %}
+    <div class="layout-content col-md-12">
+    {% endif %}
       {{ page.content }}
     </div>{# /.layout-content #}
 
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first col-md-4" role="complementary">
+      <aside class="layout-sidebar-first col-md-3" role="complementary">
         {{ page.sidebar_first }}
       </aside>
     {% endif %}
 
     {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second col-md-4" role="complementary">
+      <aside class="layout-sidebar-second col-md-3" role="complementary">
         {{ page.sidebar_second }}
       </aside>
     {% endif %}
