@@ -43,9 +43,9 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+<div class="layout-container container">
 
-  <header role="banner">
+  <header class="row" role="banner">
     {{ page.header }}
   </header>
 
@@ -58,21 +58,21 @@
 
   {{ page.help }}
 
-  <main role="main">
+  <main class="row" role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
+    <div class="layout-content col-md-8">
       {{ page.content }}
     </div>{# /.layout-content #}
 
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
+      <aside class="layout-sidebar-first col-md-4" role="complementary">
         {{ page.sidebar_first }}
       </aside>
     {% endif %}
 
     {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
+      <aside class="layout-sidebar-second col-md-4" role="complementary">
         {{ page.sidebar_second }}
       </aside>
     {% endif %}
@@ -80,7 +80,7 @@
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo">
+    <footer class="row" role="contentinfo">
       {{ page.footer }}
     </footer>
   {% endif %}
