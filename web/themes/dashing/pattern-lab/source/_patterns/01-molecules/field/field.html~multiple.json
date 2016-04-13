@@ -1,0 +1,20 @@
+{
+  "multiple": true,
+  "items": [
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    }
+  ]
+}

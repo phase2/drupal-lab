@@ -1,6 +1,7 @@
 {
   "title": "Title",
   "label": "Label",
+  "text": "Text",
   "site_logo": "../../images/logo.png",
   "site_name": "Site Name",
   "site_slogan": "Site Slogan",
