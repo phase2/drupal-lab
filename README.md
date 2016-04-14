@@ -9,8 +9,7 @@ A Drupal 8 site with a Pattern Lab Twig theme.
 ### Prerequisites
 
 - `composer` installed
-- `drush` installed
-- drupal console installed - aliased to `drupal`
+- `npm` installed
 
 ### Site Install
 
@@ -20,7 +19,7 @@ A Drupal 8 site with a Pattern Lab Twig theme.
 
 ### Run Drupal Server
 
-- Run `drupal server` in `web/` OR:
+- Run `../vendor/bin/drupal server` in `web/` OR:
 - Set up your own Apache server to point towards the `web/` directory.
 
 ### Credentials
@@ -46,7 +45,7 @@ To execute watches on Scss and Pattern Lab along with a server for Pattern Lab, 
 
 ## Configuration
 
-After making changes, run `drush config-export -y` and commit the files. If you just pulled or are deploying, run `drupal config:import -y` to pull configuration changes present in the yaml files in `web/sites/default/config/sync/` into the database. Very similar to Features in Drupal 7.
+After making changes, run `../vendor/bin/drupal config:export -y` and commit the files. If you just pulled or are deploying, run `../vendor/bin/drupal config:import -y` to pull configuration changes present in the yaml files in `web/sites/default/config/sync/` into the database. Very similar to Features in Drupal 7.
 
 ## Install Drupal Modules
 
@@ -54,4 +53,4 @@ To install a new Drupal module, run this:
 
     composer require drupal/MODULE_NAME:@8.*
 
-After enabling, do a `drupal config:export -y`.
+After enabling, do a `../vendor/bin/drupal config:export -y`.
