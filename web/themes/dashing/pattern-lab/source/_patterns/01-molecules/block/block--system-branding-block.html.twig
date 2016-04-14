@@ -13,6 +13,7 @@
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
 #}
+{% set attributes = attributes.addClass('col-md-9') %}
 {% block content %}
   {% if site_logo %}
     <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-logo">
