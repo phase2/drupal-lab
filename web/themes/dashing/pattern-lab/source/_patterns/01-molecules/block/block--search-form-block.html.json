@@ -1,0 +1,9 @@
+{
+  "label": "Search",
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "content": "molecules-form.html-search"
+}

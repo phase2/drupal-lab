@@ -1,0 +1,14 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": [
+        "js-form-item",
+        "form-item",
+        "js-form-type-search",
+        "form-type-search",
+        "js-form-item-keys"
+      ]
+    }
+  },
+  "children": "molecules-input.html-text"
+}
