@@ -1,0 +1,26 @@
+.pyramid-grid {
+  > * {
+    margin-bottom: $spacing;
+    &[class]:last-child {
+      margin-bottom: $spacing;
+    }
+  }
+  @include breakpoint($bp--medium-up) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > * {
+      width: calc(50% - #{$spacing / 2});
+    }
+    @include breakpoint($bp--xlarge-up) {
+      > * {
+        width: calc(33.3% - #{$spacing / 1.5});
+      }
+    }
+    @include breakpoint($bp--xxlarge-up) {
+      > * {
+        width: calc(25% - #{$spacing / 1.33});
+      }
+    }
+  }
+}
