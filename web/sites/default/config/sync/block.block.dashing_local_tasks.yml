@@ -9,7 +9,7 @@ _core:
 id: dashing_local_tasks
 theme: dashing
 region: content
-weight: -40
+weight: 3
 provider: null
 plugin: local_tasks_block
 settings:

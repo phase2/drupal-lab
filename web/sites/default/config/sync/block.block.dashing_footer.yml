@@ -12,7 +12,7 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: dashing_footer
 theme: dashing
-region: sidebar_first
+region: footer
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

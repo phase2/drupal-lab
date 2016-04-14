@@ -9,7 +9,7 @@ _core:
 id: dashing_page_title
 theme: dashing
 region: content
-weight: -50
+weight: 1
 provider: null
 plugin: page_title_block
 settings:
