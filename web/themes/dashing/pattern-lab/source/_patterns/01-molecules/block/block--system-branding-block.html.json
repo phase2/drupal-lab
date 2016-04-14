@@ -1,0 +1,11 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "configuration": {
+    "provider": "system"
+  },
+  "plugin_id": "system-branding-block"
+}
