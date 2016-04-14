@@ -19,7 +19,7 @@
         "composer/installers": "^1.0.20",
         "drupal-composer/drupal-scaffold": "^1.3.1",
         "cweagans/composer-patches": "~1.0",
-        "drupal/core": "8.0.*",
+        "drupal/core": "8.*",
         "drush/drush": "~8.0",
         "drupal/console": "~0.10"
     },
@@ -35,8 +35,8 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "minimum-stability": "RC",
+    "prefer-stable": false,
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php"
