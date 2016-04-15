@@ -1,0 +1,10 @@
+.layout {
+  &-content {
+    margin: $spacing 0;
+  }
+
+  &-sidebar-first,
+  &-sidebar-second {
+    margin: $spacing 0;
+  }
+}
