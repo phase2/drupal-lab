@@ -1,0 +1,13 @@
+{% extends "menu.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override to display a tool menu.
+ *
+ * Add 'nav-pills' & 'nav-stacked' classes to style the menu as
+ * Bootstrap Stacked Pills.
+ *
+ * @see http://v4-alpha.getbootstrap.com/components/navs/#stacked-pills
+ */
+#}
+{% set attributes = attributes.addClass('nav-pills', 'nav-stacked') %}
