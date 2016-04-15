@@ -45,9 +45,7 @@
 #}
 <div class="layout-container container">
 
-  <header class="header" role="banner">
-    {{ page.header }}
-  </header>
+  {{ page.header }}
 
   {{ page.primary_menu }}
   {{ page.secondary_menu }}
@@ -85,10 +83,6 @@
 
   </main>
 
-  {% if page.footer %}
-    <footer class="footer" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+  {{ page.footer }}
 
 </div>{# /.layout-container #}
