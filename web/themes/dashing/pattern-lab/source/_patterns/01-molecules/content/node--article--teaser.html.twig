@@ -75,13 +75,16 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
-  {% include "themes/dashing/pattern-lab/source/_patterns/01-molecules/content/card.html.twig" with {
+  {% embed "themes/dashing/pattern-lab/source/_patterns/01-molecules/content/card.html.twig" with {
     "url": url,
     "title": label
   } %}
-
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
-  </div>
+    {% block card_image %}
+      {{ content.field_image }}
+    {% endblock %}
+    {% block card_links %}
+      {{ content.links }}
+    {% endblock %}
+  {% endembed %}
 
 </article>
