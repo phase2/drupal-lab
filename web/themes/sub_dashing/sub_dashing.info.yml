@@ -1,0 +1,12 @@
+# THEMENAME.info.yml
+name: Sub Dashing
+type: theme
+base theme: dashing
+description: 'A sub theme of Dashing.'
+core: 8.x
+
+# Libraries
+libraries:
+  - sub_dashing/core
+
+# Regions
