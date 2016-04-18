@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.medium
+    - image.style.dashing_568x320
     - node.type.article
   module:
     - image
@@ -24,7 +24,7 @@ content:
     type: image
     weight: -1
     settings:
-      image_style: medium
+      image_style: dashing_568x320
       image_link: content
     third_party_settings: {  }
     label: hidden
