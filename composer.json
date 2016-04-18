@@ -21,7 +21,8 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "8.*",
         "drush/drush": "~8.0",
-        "drupal/console": "~0.10"
+        "drupal/console": "~0.10",
+        "drupal/devel": "8.*"
     },
     "require-dev": {
         "behat/mink": "~1.6",
@@ -35,7 +36,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "RC",
+    "minimum-stability": "dev",
     "prefer-stable": false,
     "autoload": {
         "classmap": [
