@@ -17,7 +17,7 @@
         width: calc(33.3% - #{$spacing / 1.5});
       }
     }
-    @include breakpoint($bp--xxlarge-up) {
+    @include breakpoint($bp--xxxlarge-up) {
       > * {
         width: calc(25% - #{$spacing / 1.33});
       }
