@@ -40,7 +40,7 @@
       <h2{{ heading.attributes }}>{{ heading.text }}</h2>
     {%- endif -%}
   {%- endif -%}
-  <ul{{ attributes }}>
+  <ul{{ attributes.addClass('nav') }}>
     {%- for key, item in links -%}
       <li{{ item.attributes.addClass(key|clean_class) }}>
         {%- if item.link -%}

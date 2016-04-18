@@ -11,3 +11,13 @@
 function dashing_preprocess_menu_local_task(&$vars) {
   $vars['link']['#options']['attributes']['class'][] = 'nav-link';
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for links templates.
+ */
+function dashing_preprocess_links(&$vars) {
+  foreach ($vars['links'] as $key => $item) {
+    $vars['links'][$key]['link']['#options']['attributes']['class'][] = 'btn';
+    $vars['links'][$key]['link']['#options']['attributes']['class'][] = 'btn-primary';
+  }
+}
