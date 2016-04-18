@@ -19,6 +19,7 @@
     "title": "Legend Title"
   },
   "submitted": "Submitted at some point",
+  "read_more": "Read more",
   "list_type": "ul",
   "items": [
     {
@@ -36,5 +37,8 @@
     {
       "value": "Item 5"
     }
-  ]
+  ],
+  "image_small": "../../images/320x180.png",
+  "image_medium": "../../images/568x320.png",
+  "image_large": "../../images/800x600.png"
 }

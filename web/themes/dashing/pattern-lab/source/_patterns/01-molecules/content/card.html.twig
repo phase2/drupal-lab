@@ -1,13 +1,15 @@
 <div class="card">
   {% block card_image %}
-    <img class="card-img-top" src="http://placehold.it/1000x400" />
+    <img class="card-img-top" src="{{ image_medium }}" />
   {% endblock %}
   <div class="card-block">
-    <h4 class="card-title">
-      <a href="{{ url }}" rel="bookmark">{{ title }}</a>
-    </h4>
+    {% block card_title %}
+      <h4 class="card-title">
+        <a href="{{ url }}" rel="bookmark">{{ title }}</a>
+      </h4>
+    {% endblock %}
     {% block card_links %}
-      <a href="#" class="btn btn-primary">Read more</a>
+      <a href="{{ url }}" class="btn btn-primary">{{ read_more }}</a>
     {% endblock %}
   </div>
 </div>

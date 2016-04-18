@@ -1,0 +1,14 @@
+uuid: 04f90de9-46dc-495c-9546-2723f1602bb0
+langcode: en
+status: true
+dependencies: {  }
+name: dashing_320x180
+label: 'Dashing 320x180'
+effects:
+  b6274dd3-bbac-4e4c-949d-d26b9a333295:
+    uuid: b6274dd3-bbac-4e4c-949d-d26b9a333295
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 180
