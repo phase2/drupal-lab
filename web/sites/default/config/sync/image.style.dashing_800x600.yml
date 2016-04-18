@@ -1,0 +1,14 @@
+uuid: 69fb42f4-0c06-477b-a80e-a7f6f6aee55b
+langcode: en
+status: true
+dependencies: {  }
+name: dashing_800x600
+label: 'Dashing 800x600'
+effects:
+  745e3f76-febd-4420-b316-0709856eac5f:
+    uuid: 745e3f76-febd-4420-b316-0709856eac5f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600

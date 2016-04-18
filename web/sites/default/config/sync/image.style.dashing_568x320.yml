@@ -1,0 +1,14 @@
+uuid: 34893ece-afcc-489f-a2ff-93f0f167fee5
+langcode: en
+status: true
+dependencies: {  }
+name: dashing_568x320
+label: 'Dashing 568x320'
+effects:
+  f1c3e817-ecb7-40fb-9eed-edef24e7522b:
+    uuid: f1c3e817-ecb7-40fb-9eed-edef24e7522b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 568
+      height: 320
