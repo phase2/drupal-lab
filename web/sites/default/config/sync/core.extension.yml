@@ -11,6 +11,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -20,6 +21,7 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   link: 0
   menu_ui: 0
   node: 0
