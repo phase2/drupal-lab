@@ -51,6 +51,6 @@ After making changes, run `../vendor/bin/drupal config:export -y` and commit the
 
 To install a new Drupal module, run this:
 
-    composer require drupal/MODULE_NAME:@8.*
+    composer require drupal/MODULE_NAME:8.*
 
 After enabling, do a `../vendor/bin/drupal config:export -y`.
