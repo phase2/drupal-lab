@@ -75,13 +75,13 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
-  {% embed "themes/dashing/pattern-lab/source/_patterns/01-molecules/cards/card.html.twig"
+  {% embed "themes/dashing/pattern-lab/source/_patterns/01-molecules/cards/card.twig"
     with {
       "url": url,
       "title": label
     }
   %}
-    {# These blocks are defined in "themes/dashing/pattern-lab/source/_patterns/01-molecules/content/card.html.twig" #}
+    {# These blocks are defined in the embeded template #}
     {# and we override them right here: #}
     {% block card_image %}
       {{ content.field_image }}
