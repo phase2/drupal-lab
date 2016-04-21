@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Pyramid grid.
+ *
+ * Responsive grid creates rows of 4, 3, 2, and 1 boxes at specific breakpoints.
+ *
+ * @see `scss/30-global/_grids.scss`
+ */
+#}
+<div class="pyramid-grid">
+  {% for item in items %}
+    {{ item.content }}
+  {% endfor %}
+</div>
+
+{# @todo remove this #}
+<style>
+  .box {
+    background-color: lightgray;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.125);
+    min-height: 200px;
+  }
+</style>

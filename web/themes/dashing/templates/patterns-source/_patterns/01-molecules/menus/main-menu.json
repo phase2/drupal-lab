@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "title": "Home",
+      "url": "#",
+      "attributes": {
+        "Attribute()": {
+          "class": []
+        }
+      }
+    },
+    {
+      "title": "Contact",
+      "url": "#"
+    }
+  ]
+}

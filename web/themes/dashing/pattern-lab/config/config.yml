@@ -18,7 +18,7 @@ cacheBusterOn: 'true'
 exportDir: export
 packagesDir: packages
 publicDir: public
-sourceDir: source
+sourceDir: ../templates/patterns-source
 ishMinimum: '240'
 ishMaximum: '2600'
 ishControlsHide:

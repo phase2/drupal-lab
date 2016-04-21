@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display an article node teaser.
+ * Theme override to display a page node teaser.
  *
  * Available variables:
  * - node: The node entity with limited access to object properties and methods.
@@ -75,17 +75,19 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
-  {% embed "themes/dashing/pattern-lab/source/_patterns/01-molecules/content/card.html.twig"
+  {% embed "themes/dashing/pattern-lab/source/_patterns/01-molecules/cards/card.twig"
     with {
       "url": url,
       "title": label
     }
   %}
-    {# These blocks are defined in "themes/dashing/pattern-lab/source/_patterns/01-molecules/content/card.html.twig" #}
+    {# These blocks are defined in the embeded template #}
     {# and we override them right here: #}
-    {% block card_image %}
-      {{ content.field_image }}
-    {% endblock %}
+    {% if content.field_image %}
+      {% block card_image %}
+        {{ content.field_image }}
+      {% endblock %}
+    {% endif %}
     {% block card_links %}
       {{ content.links }}
     {% endblock %}
