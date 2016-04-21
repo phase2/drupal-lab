@@ -1,6 +1,6 @@
 {
-  "imgSrc": "../../images/logo.png",
+  "imgSrc": "../../../../logo.svg",
   "url": "#",
-  "siteTitle": "Site Title",
-  "siteSlogan": "The Slogan Goes Here"
+  "siteTitle": "Drupal Lab",
+  "siteSlogan": "Drupal 8 + Pattern Lab Twig"
 }
