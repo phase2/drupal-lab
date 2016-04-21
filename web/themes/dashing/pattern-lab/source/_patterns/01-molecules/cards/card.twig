@@ -1,15 +1,32 @@
+{#
+/**
+ * @file
+ * Bootstrap v4 Card.
+ *
+ * @see http://v4-alpha.getbootstrap.com/components/card/
+ */
+#}
 <div class="card">
   {% block card_image %}
     <img class="card-img-top" src="{{ image_medium }}" />
   {% endblock %}
+
   <div class="card-block">
     {% block card_title %}
       <h4 class="card-title">
         <a href="{{ url }}" rel="bookmark">{{ title }}</a>
       </h4>
     {% endblock %}
+
     {% block card_links %}
       <a href="{{ url }}" class="btn btn-primary">{{ read_more }}</a>
     {% endblock %}
   </div>
 </div>
+
+{# @todo remove this #}
+<style>
+  .card {
+    max-width: 568px;
+  }
+</style>
