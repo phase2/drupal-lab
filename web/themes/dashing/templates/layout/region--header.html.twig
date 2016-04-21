@@ -12,17 +12,10 @@
  * @see template_preprocess_region()
  */
 #}
-{%
-  set classes = [
-    'region',
-    'region-' ~ region|clean_class,
-    'row',
-  ]
-%}
 {% if content %}
-  <header class="header" role="banner">
-    <section{{ attributes.addClass(classes) }}>
+  {% embed "themes/dashing/pattern-lab/source/_patterns/03-organisms/site/site-header.twig" %}
+    {% block content %}
       {{ content }}
-    </section>
-  </header>
+    {% endblock %}
+  {% endembed %}
 {% endif %}
