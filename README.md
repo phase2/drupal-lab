@@ -15,6 +15,8 @@ A Drupal 8 site with a Pattern Lab Twig theme.
 
 		bash scripts/site-setup.sh
 
+When it asks if you want to merge or replace stuff, select merge.
+
 ## Usage
 
 ### Run Drupal Server
