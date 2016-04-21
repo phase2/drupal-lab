@@ -33,6 +33,10 @@ When it asks if you want to merge or replace stuff, select merge.
 
 		bash scripts/site-reinstall.sh
 
+### Cache Rebuilds
+
+		../vendor/bin/drupal cr all
+
 ### Theme & Pattern Lab
 
 All commands ran from root of theme in `web/themes/dashing/`. An `npm install` was ran in `site-setup.sh` script, run `npm install` if you don't see `node_modules/` or have errors.

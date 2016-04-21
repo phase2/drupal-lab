@@ -15,7 +15,7 @@
 #}
 {% set attributes = attributes.addClass('col-md-9') %}
 {% block content %}
-  {% include "themes/dashing/templates/patterns-source/_patterns/01-molecules/blocks/branding.twig" with {
+  {% include "@dashing/patterns-source/_patterns/01-molecules/blocks/branding.twig" with {
     "url": path('<front>'),
     "imgSrc": site_logo,
     "siteTitle": site_name,
