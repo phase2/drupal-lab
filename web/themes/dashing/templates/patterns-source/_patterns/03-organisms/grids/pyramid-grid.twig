@@ -9,9 +9,15 @@
  */
 #}
 <div class="pyramid-grid">
-  {% for item in items %}
-    {{ item.content }}
-  {% endfor %}
+
+  {% block items %}
+    {% for item in items %}
+      <div{{ item.attributes.addClass('grid-item') }}>
+        {{ item.content }}
+      </div>
+    {% endfor %}
+  {% endblock %}
+
 </div>
 
 {# @todo remove this #}
