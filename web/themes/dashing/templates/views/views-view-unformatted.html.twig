@@ -18,8 +18,24 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-{% include "@dashing/patterns-source/_patterns/03-organisms/grids/pyramid-grid.twig"
+{# We embed the pyramid grid here for unformatted views rows. #}
+{% embed "@dashing/patterns-source/_patterns/03-organisms/grids/pyramid-grid.twig"
   with {
     "items": rows
   }
 %}
+
+  {% block items %}
+    {% for row in rows %}
+      {%
+        set row_classes = [
+          default_row_class ? 'views-row',
+        ]
+      %}
+      <div{{ row.attributes.addClass(row_classes) }}>
+        {{ row.content }}
+      </div>
+    {% endfor %}
+  {% endblock %}
+
+{% endembed %}
