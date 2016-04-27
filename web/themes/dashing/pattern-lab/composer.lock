@@ -378,16 +378,16 @@
         },
         {
             "name": "pattern-lab/core",
-            "version": "v0.7.0",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pattern-lab/patternlab-php-core.git",
-                "reference": "473a17bf0448bbdfdc676ed5658891eca83a4e8c"
+                "reference": "3c2f8120891d1df389160c4c849dff0f44d2791f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pattern-lab/patternlab-php-core/zipball/473a17bf0448bbdfdc676ed5658891eca83a4e8c",
-                "reference": "473a17bf0448bbdfdc676ed5658891eca83a4e8c",
+                "url": "https://api.github.com/repos/pattern-lab/patternlab-php-core/zipball/3c2f8120891d1df389160c4c849dff0f44d2791f",
+                "reference": "3c2f8120891d1df389160c4c849dff0f44d2791f",
                 "shasum": ""
             },
             "require": {
@@ -434,20 +434,20 @@
                 "style guide",
                 "styleguide"
             ],
-            "time": "2016-04-18 14:27:27"
+            "time": "2016-04-27 14:52:55"
         },
         {
             "name": "pattern-lab/patternengine-twig",
-            "version": "v0.7.0",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pattern-lab/patternengine-php-twig.git",
-                "reference": "2c338eed598ae7ac5969a5396bac2fe0b688e9d3"
+                "reference": "26c4a935fcd637f387fa05f4dac0f686d4607a03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pattern-lab/patternengine-php-twig/zipball/2c338eed598ae7ac5969a5396bac2fe0b688e9d3",
-                "reference": "2c338eed598ae7ac5969a5396bac2fe0b688e9d3",
+                "url": "https://api.github.com/repos/pattern-lab/patternengine-php-twig/zipball/26c4a935fcd637f387fa05f4dac0f686d4607a03",
+                "reference": "26c4a935fcd637f387fa05f4dac0f686d4607a03",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +498,7 @@
                 "pattern lab",
                 "twig"
             ],
-            "time": "2016-04-04 16:54:15"
+            "time": "2016-04-25 13:46:52"
         },
         {
             "name": "pattern-lab/styleguidekit-assets-default",
