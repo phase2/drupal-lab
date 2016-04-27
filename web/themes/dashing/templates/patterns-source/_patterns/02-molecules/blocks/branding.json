@@ -1,0 +1,10 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": []
+    }
+  },
+  "site_logo": "../../../../logo.svg",
+  "site_title": "Drupal Lab",
+  "site_slogan": "Drupal 8 + Pattern Lab Twig"
+}

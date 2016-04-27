@@ -1,0 +1,12 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": [
+        "form-actions",
+        "js-form-wrapper",
+        "form-wrapper"
+      ]
+    }
+  },
+  "children": "atoms-input-submit"
+}

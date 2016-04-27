@@ -14,11 +14,11 @@
  */
 #}
 {% set attributes = attributes.addClass('col-md-9') %}
+
 {% block content %}
-  {% include "@dashing/patterns-source/_patterns/01-molecules/blocks/branding.twig" with {
-    "url": path('<front>'),
-    "imgSrc": site_logo,
-    "siteTitle": site_name,
-    "siteSlogan": site_slogan
-  } %}
+  {% include "@dashing/patterns-source/_patterns/02-molecules/blocks/branding.twig"
+    with {
+      "url": path('<front>')
+    }
+  %}
 {% endblock %}

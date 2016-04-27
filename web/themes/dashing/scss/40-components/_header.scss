@@ -1,14 +1,4 @@
 .header {
   margin-bottom: $spacing;
   padding-top: $spacing;
-
-  .site-logo {
-    display: block;
-    float: left;
-    margin-right: $spacing;
-  }
-
-  .site-name {
-    @extend h2;
-  }
 }

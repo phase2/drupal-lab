@@ -1,0 +1,12 @@
+{
+  "label": "Search",
+  "attributes": {
+    "Attribute()": {
+      "class": [
+        "container-inline",
+        "col-md-3"
+      ]
+    }
+  },
+  "content": "atoms-form-search"
+}

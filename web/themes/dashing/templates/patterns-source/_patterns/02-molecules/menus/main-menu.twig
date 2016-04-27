@@ -1,0 +1,12 @@
+<ul class="nav-pills menu nav">
+  {% for item in items %}
+    {% set classes = 'menu-item nav-item'%}
+    <li class="{{ classes }}">
+      {% if loop.index == 1 %}
+        {{ link(item.title, item.url, { 'class':['nav-link', 'is-active']}) }}
+      {% else %}
+        {{ link(item.title, item.url, { 'class':['nav-link']}) }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
