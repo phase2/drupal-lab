@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a view of unformatted rows.
+ * Theme override to display frontpage view of unformatted rows.
  *
  * Available variables:
  * - title: The title of this group of rows. May be empty.
@@ -16,8 +16,9 @@
  */
 #}
 {% if title %}
-  <h3>{{ title }}</h3>
+  {% include "@dashing/patterns-source/_patterns/01-atoms/titles/h3.twig" %}
 {% endif %}
+
 {# We embed the pyramid grid here for unformatted views rows. #}
 {% embed "@dashing/patterns-source/_patterns/03-organisms/grids/pyramid-grid.twig"
   with {
