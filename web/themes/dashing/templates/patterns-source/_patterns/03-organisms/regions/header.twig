@@ -1,0 +1,16 @@
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+    'row',
+  ]
+%}
+<header class="header" role="banner">
+  <section{{ attributes.addClass(classes) }}>
+
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+
+  </section>
+</header>
