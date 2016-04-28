@@ -1,10 +1,9 @@
-{%
-  set classes = [
-    'region',
-    'region-' ~ region|clean_class,
-    'row',
-  ]
-%}
+{#
+/**
+ * @file
+ * Region - Header.
+ */
+#}
 <header class="header" role="banner">
   <section{{ attributes.addClass(classes) }}>
 
