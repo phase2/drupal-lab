@@ -1,3 +1,4 @@
+{% extends "block.html.twig" %}
 {#
 /**
  * @file
@@ -34,4 +35,13 @@
     'col-md-3',
   ]
 %}
-{% include "@dashing/patterns-source/_patterns/02-molecules/blocks/search.twig" %}
+{% set attributes = attributes.addClass(classes) %}
+
+{% block content %}
+  {% embed "@dashing/patterns-source/_patterns/02-molecules/blocks/search.twig" %}
+
+  {% block title %}
+  {% endblock %}
+
+  {% endembed %}
+{% endblock %}
