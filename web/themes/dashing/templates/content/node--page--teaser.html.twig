@@ -77,17 +77,16 @@
 
   {% embed "@dashing/patterns-source/_patterns/02-molecules/cards/card.twig"
     with {
+      "classes": [
+        "card"
+      ],
       "url": url,
-      "title": label
+      "title": label,
+      "card_links": true
     }
   %}
     {# These blocks are defined in the embeded template #}
     {# and we override them right here: #}
-    {% if content.field_image %}
-      {% block card_image %}
-        {{ content.field_image }}
-      {% endblock %}
-    {% endif %}
     {% block card_links %}
       {{ content.links }}
     {% endblock %}

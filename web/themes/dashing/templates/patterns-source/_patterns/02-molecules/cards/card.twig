@@ -6,22 +6,78 @@
  * @see http://v4-alpha.getbootstrap.com/components/card/
  */
 #}
-<div class="card">
-  {% block card_image %}
-    <img class="card-img-top" src="{{ image_medium }}" />
-  {% endblock %}
+<div{{ attributes.addClass(classes) }}>
+
+  {% if card_header %}
+    {% block card_header %}
+      <div class="card-header">
+        Header
+      </div>
+    {% endblock %}
+  {% endif %}
+
+  {% if card_image_top %}
+    {% block card_image_top %}
+      <img class="card-img-top" src="{{ image_medium }}" />
+    {% endblock %}
+  {% endif %}
 
   <div class="card-block">
+
     {% block card_title %}
       <h4 class="card-title">
         <a href="{{ url }}" rel="bookmark">{{ title }}</a>
       </h4>
     {% endblock %}
 
-    {% block card_links %}
-      <a href="{{ url }}" class="btn btn-primary">{{ read_more }}</a>
-    {% endblock %}
+    {% if card_text %}
+      {% block card_text %}
+        <p class="card-text">{{ snippet }}</p>
+      {% endblock %}
+    {% endif %}
+
+    {% if card_links %}
+      {% block card_links %}
+        <p class="card-text">
+          <a href="{{ url }}" class="card-link">{{ read_more }}</a>
+        </p>
+      {% endblock %}
+    {% endif %}
+
+    {% if card_buttons %}
+      {% block card_buttons %}
+        <p class="card-text">
+          <a href="{{ url }}" class="btn btn-primary">{{ read_more }}</a>
+        </p>
+      {% endblock %}
+    {% endif %}
+
   </div>
+
+  {% if card_list %}
+    {% block card_list %}
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    {% endblock %}
+  {% endif %}
+
+  {% if card_image_bottom %}
+    {% block card_image_bottom %}
+      <img class="card-img-bottom" src="{{ image_medium }}" />
+    {% endblock %}
+  {% endif %}
+
+  {% if card_footer %}
+    {% block card_footer %}
+      <div class="card-footer text-muted">
+        Footer
+      </div>
+    {% endblock %}
+  {% endif %}
+
 </div>
 
 {# @todo remove this #}

@@ -17,7 +17,6 @@ function dashing_preprocess_menu_local_task(&$variables) {
  */
 function dashing_preprocess_links(&$variables) {
   foreach ($variables['links'] as $key => $item) {
-    $variables['links'][$key]['link']['#options']['attributes']['class'][] = 'btn';
-    $variables['links'][$key]['link']['#options']['attributes']['class'][] = 'btn-primary';
+    $variables['links'][$key]['link']['#options']['attributes']['class'][] = 'card-link';
   }
 }

@@ -3,6 +3,8 @@
   "attributes": {
     "Attribute()": {
       "class": [
+        "block",
+        "block-search",
         "container-inline",
         "col-md-3"
       ]
