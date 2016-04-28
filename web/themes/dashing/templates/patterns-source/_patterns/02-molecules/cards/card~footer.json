@@ -13,5 +13,5 @@
   "card_buttons": false,
   "card_list": false,
   "card_image_bottom": false,
-  "card_footer": true
+  "card_footer": "Footer"
 }

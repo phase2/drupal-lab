@@ -6,7 +6,7 @@
       ]
     }
   },
-  "card_header": true,
+  "card_header": "Header",
   "card_image_top": false,
   "card_text": false,
   "card_links": true,

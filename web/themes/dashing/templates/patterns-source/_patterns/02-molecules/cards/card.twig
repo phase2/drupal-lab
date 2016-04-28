@@ -6,12 +6,14 @@
  * @see http://v4-alpha.getbootstrap.com/components/card/
  */
 #}
+{# @todo This is currently duplicating attributes for node teasers. #}
+{#       We don't necessarily want that, so fix it. #}
 <div{{ attributes.addClass(classes) }}>
 
   {% if card_header %}
     {% block card_header %}
       <div class="card-header">
-        Header
+        {{ card_header }}
       </div>
     {% endblock %}
   {% endif %}
@@ -73,7 +75,7 @@
   {% if card_footer %}
     {% block card_footer %}
       <div class="card-footer text-muted">
-        Footer
+        {{ card_footer }}
       </div>
     {% endblock %}
   {% endif %}
