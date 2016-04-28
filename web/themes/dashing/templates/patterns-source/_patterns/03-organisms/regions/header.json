@@ -10,9 +10,7 @@
   },
   "content": {
     "join()": [
-      "<div class=\"col-md-9\">",
       "molecules-branding",
-      "</div>",
       "molecules-search"
     ]
   }

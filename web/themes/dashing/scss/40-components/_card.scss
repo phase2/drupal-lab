@@ -1,5 +1,11 @@
 .card {
-  .field--name-field-image img {
+  // Simulate card image top for the first child image.
+  .field--name-field-image:first-child img {
     @extend .card-img-top;
+  }
+
+  // Simulate card image bottom for the last child image.
+  .field--name-field-image:last-child img {
+    @extend .card-img-bottom;
   }
 }

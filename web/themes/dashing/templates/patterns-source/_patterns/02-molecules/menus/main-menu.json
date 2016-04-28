@@ -10,8 +10,22 @@
       }
     },
     {
+      "title": "News",
+      "url": "#",
+      "attributes": {
+        "Attribute()": {
+          "class": []
+        }
+      }
+    },
+    {
       "title": "Contact",
-      "url": "#"
+      "url": "#",
+      "attributes": {
+        "Attribute()": {
+          "class": []
+        }
+      }
     }
   ]
 }
