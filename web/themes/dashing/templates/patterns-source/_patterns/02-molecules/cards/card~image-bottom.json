@@ -1,0 +1,17 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": [
+        "card"
+      ]
+    }
+  },
+  "card_header": false,
+  "card_image_top": false,
+  "card_text": false,
+  "card_links": true,
+  "card_buttons": false,
+  "card_list": false,
+  "card_image_bottom": true,
+  "card_footer": false
+}
