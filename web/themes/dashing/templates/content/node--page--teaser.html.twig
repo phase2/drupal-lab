@@ -64,7 +64,7 @@
  */
 #}
 {%
-  set classes = [
+  set node_classes = [
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -73,7 +73,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<article{{ attributes.addClass(classes) }}>
+<article{{ attributes.addClass(node_classes) }}>
 
   {% embed "@dashing/patterns-source/_patterns/02-molecules/cards/card.twig"
     with {
@@ -82,7 +82,8 @@
       ],
       "url": url,
       "title": label,
-      "card_links": true
+      "card_links": true,
+      "card_footer": node.bundle|title
     }
   %}
     {# These blocks are defined in the embeded template #}
