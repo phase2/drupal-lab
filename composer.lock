@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a6188c6b5ad65e677d21a4a6509e7861",
-    "content-hash": "81c592b5a0ef5ccced3c73471eb9ba72",
+    "hash": "df17c2e514baca51c6f5adf4a9f4cb02",
+    "content-hash": "0db65b8f4daa1a9100fc701e27901f96",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -806,6 +806,31 @@
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
             "time": "2016-04-13 15:46:44"
+        },
+        {
+            "name": "drupal/components",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/components.git",
+                "reference": "d6f3df460ca16373782f442ca92f9c251fbf311b"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Registers “component libraries” defined in modules and themes with the Twig system",
+            "homepage": "https://www.drupal.org/project/components",
+            "time": "2016-04-19 08:08:08"
         },
         {
             "name": "drupal/console",
