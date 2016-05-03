@@ -6,6 +6,7 @@ module:
   ckeditor: 0
   color: 0
   comment: 0
+  components: 0
   config: 0
   contact: 0
   contextual: 0
