@@ -9,8 +9,10 @@ libraries:
   - dashing/core
   - dashing/bootstrap
 
-# Regions
-
+# For compatibility with Pattern Lab templates; this list must
+# always be the folders immediately under the `$sourceDir` patterns folder
+# `$sourceDir` = defined in `pattern-lab/config/config.yml` under `sourceDir
+# patterns folder = `$sourceDir` + `_patterns/`
 component-libraries:
   atoms:
     paths:
