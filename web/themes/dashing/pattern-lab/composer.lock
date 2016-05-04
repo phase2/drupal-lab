@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3751b9298e882c47c4b284a01dc9710b",
-    "content-hash": "76d4f880a3a18dae8d5b7720e224da67",
+    "hash": "6c909cf271ece5043992960e9da9f76a",
+    "content-hash": "9bdb205bae4b69dab18ff706180fd56d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -68,50 +68,6 @@
                 "zip"
             ],
             "time": "2014-12-10 15:03:17"
-        },
-        {
-            "name": "aleksip/plugin-data-transform",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aleksip/plugin-data-transform.git",
-                "reference": "0ca78f235acfc63796d97c5c675d18881672fe4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aleksip/plugin-data-transform/zipball/0ca78f235acfc63796d97c5c675d18881672fe4d",
-                "reference": "0ca78f235acfc63796d97c5c675d18881672fe4d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "type": "patternlab-plugin",
-            "autoload": {
-                "psr-0": {
-                    "aleksip\\DataTransformPlugin\\": "src/",
-                    "Drupal\\Component\\Render\\": "src/",
-                    "Drupal\\Component\\Utility\\": "src/",
-                    "Drupal\\Core\\Template\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Aleksi Peebles"
-                }
-            ],
-            "description": "Data Transform Plugin for Pattern Lab PHP",
-            "homepage": "https://github.com/aleksip/plugin-data-transform",
-            "keywords": [
-                "drupal",
-                "pattern lab",
-                "plugin"
-            ],
-            "time": "2016-01-13 14:21:58"
         },
         {
             "name": "doctrine/collections",
@@ -378,16 +334,16 @@
         },
         {
             "name": "pattern-lab/core",
-            "version": "v0.7.1",
+            "version": "v0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pattern-lab/patternlab-php-core.git",
-                "reference": "3c2f8120891d1df389160c4c849dff0f44d2791f"
+                "reference": "25c71af708d996d1e2b09490b380b3418918d58f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pattern-lab/patternlab-php-core/zipball/3c2f8120891d1df389160c4c849dff0f44d2791f",
-                "reference": "3c2f8120891d1df389160c4c849dff0f44d2791f",
+                "url": "https://api.github.com/repos/pattern-lab/patternlab-php-core/zipball/25c71af708d996d1e2b09490b380b3418918d58f",
+                "reference": "25c71af708d996d1e2b09490b380b3418918d58f",
                 "shasum": ""
             },
             "require": {
@@ -434,20 +390,76 @@
                 "style guide",
                 "styleguide"
             ],
-            "time": "2016-04-27 14:52:55"
+            "time": "2016-04-29 19:24:16"
         },
         {
-            "name": "pattern-lab/patternengine-twig",
-            "version": "v0.7.1",
+            "name": "pattern-lab/drupal-twig-components",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pattern-lab/patternengine-php-twig.git",
-                "reference": "26c4a935fcd637f387fa05f4dac0f686d4607a03"
+                "url": "https://github.com/pattern-lab/plugin-drupal-twig-components.git",
+                "reference": "e249d8d141d08830ebfa8b893a74aaae7146263f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pattern-lab/patternengine-php-twig/zipball/26c4a935fcd637f387fa05f4dac0f686d4607a03",
-                "reference": "26c4a935fcd637f387fa05f4dac0f686d4607a03",
+                "url": "https://api.github.com/repos/pattern-lab/plugin-drupal-twig-components/zipball/e249d8d141d08830ebfa8b893a74aaae7146263f",
+                "reference": "e249d8d141d08830ebfa8b893a74aaae7146263f",
+                "shasum": ""
+            },
+            "type": "patternlab-plugin",
+            "extra": {
+                "patternlab": {
+                    "dist": {
+                        "sourceDir": [
+                            {
+                                "filters/*": "_twig-components/filters/*"
+                            },
+                            {
+                                "functions/*": "_twig-components/functions/*"
+                            },
+                            {
+                                "tags/*": "_twig-components/tags/*"
+                            },
+                            {
+                                "tests/*": "_twig-components/tests/*"
+                            }
+                        ]
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Olsen",
+                    "email": "dmolsen@gmail.com",
+                    "homepage": "http://dmolsen.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "A collection of Twig components to be used with Drupal- and Twig-related StarterKits.",
+            "homepage": "http://patternlab.io",
+            "keywords": [
+                "drupal",
+                "pattern lab",
+                "twig"
+            ],
+            "time": "2016-04-29 21:04:30"
+        },
+        {
+            "name": "pattern-lab/patternengine-twig",
+            "version": "v0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pattern-lab/patternengine-php-twig.git",
+                "reference": "36242077104a0187deea0c00d18fef12861421bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pattern-lab/patternengine-php-twig/zipball/36242077104a0187deea0c00d18fef12861421bc",
+                "reference": "36242077104a0187deea0c00d18fef12861421bc",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +510,7 @@
                 "pattern lab",
                 "twig"
             ],
-            "time": "2016-04-25 13:46:52"
+            "time": "2016-05-04 02:13:27"
         },
         {
             "name": "pattern-lab/styleguidekit-assets-default",
@@ -924,16 +936,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.4",
+            "version": "v2.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "fb467471952ef5cf8497c029980e556b47545333"
+                "reference": "1276bd9be89be039748cf753a2137f4ef149cd74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/fb467471952ef5cf8497c029980e556b47545333",
-                "reference": "fb467471952ef5cf8497c029980e556b47545333",
+                "url": "https://api.github.com/repos/symfony/process/zipball/1276bd9be89be039748cf753a2137f4ef149cd74",
+                "reference": "1276bd9be89be039748cf753a2137f4ef149cd74",
                 "shasum": ""
             },
             "require": {
@@ -969,7 +981,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-23 13:11:46"
+            "time": "2016-04-14 15:22:22"
         },
         {
             "name": "symfony/yaml",
@@ -1080,7 +1092,52 @@
             "time": "2016-01-25 21:22:18"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "aleksip/plugin-data-transform",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aleksip/plugin-data-transform.git",
+                "reference": "0ca78f235acfc63796d97c5c675d18881672fe4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aleksip/plugin-data-transform/zipball/0ca78f235acfc63796d97c5c675d18881672fe4d",
+                "reference": "0ca78f235acfc63796d97c5c675d18881672fe4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "patternlab-plugin",
+            "autoload": {
+                "psr-0": {
+                    "aleksip\\DataTransformPlugin\\": "src/",
+                    "Drupal\\Component\\Render\\": "src/",
+                    "Drupal\\Component\\Utility\\": "src/",
+                    "Drupal\\Core\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksi Peebles"
+                }
+            ],
+            "description": "Data Transform Plugin for Pattern Lab PHP",
+            "homepage": "https://github.com/aleksip/plugin-data-transform",
+            "keywords": [
+                "drupal",
+                "pattern lab",
+                "plugin"
+            ],
+            "time": "2016-01-13 14:21:58"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {

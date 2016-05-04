@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Code based on Drupal\Core\Template\TwigNodeTrans and Drupal\Core\Template\TwigTransTokenParser from Drupal 8 core.
+ * Code based on `Drupal\Core\Template\TwigNodeTrans` and `Drupal\Core\Template\TwigTransTokenParser` from Drupal 8 core.
  */
 
 // these files are loaded three times and we can't re-set a class
