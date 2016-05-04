@@ -16,10 +16,10 @@ libraries:
 component-libraries:
   atoms:
     paths:
-      - templates/patterns-source/_patterns/01-atoms
+      - pattern-lab/source/_patterns/01-atoms
   molecules:
-      paths:
-        - templates/patterns-source/_patterns/02-molecules
+    paths:
+      - pattern-lab/source/_patterns/02-molecules
   organisms:
-      paths:
-        - templates/patterns-source/_patterns/03-organisms
+    paths:
+      - pattern-lab/source/_patterns/03-organisms
