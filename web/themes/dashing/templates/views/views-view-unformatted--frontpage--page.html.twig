@@ -16,11 +16,11 @@
  */
 #}
 {% if title %}
-  {% include "@dashing/patterns-source/_patterns/01-atoms/titles/h3.twig" %}
+  {% include "@atoms/titles/h3.twig" %}
 {% endif %}
 
 {# We embed the pyramid grid here for unformatted views rows. #}
-{% embed "@dashing/patterns-source/_patterns/03-organisms/grids/pyramid-grid.twig"
+{% embed "@organisms/grids/pyramid-grid.twig"
   with {
     "items": rows
   }
