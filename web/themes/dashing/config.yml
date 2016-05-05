@@ -30,7 +30,7 @@ patternLab:
   engine: php-twig
   src:
     root: pattern-lab/
-    source: templates/patterns-source/
+    source: pattern-lab/source/
 icons: # https://github.com/nfroidure/gulp-iconfont
   enabled: false
   src: src/images/icons/src/*.svg
