@@ -1,6 +1,6 @@
 # Drupal Lab
 
-A Drupal 8 site with a Pattern Lab Twig theme.
+A sample Drupal 8 site with a Pattern Lab Twig powered theme.
 
 **All commands starting with `bash` are ran from root of repo; all that start with `drupal` are ran from `web/`**
 
