@@ -5,5 +5,17 @@ php:
 #  - 7.0
 #before_install:
 #  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && source ~/.nvm/nvm.sh && nvm install 4.2
+
+# https://docs.travis-ci.com/user/languages/javascript-with-nodejs#Node.js-v4-(or-io.js-v3)-compiler-requirements
+env:
+#  - CXX=g++-4.8
+  - PHP_OPTIONS="-d sendmail_path=`which true`" # Fixes inability to send email after site install ~ https://www.drupal.org/node/1826652#comment-9380565
+#addons:
+#  apt:
+#    sources:
+#      - ubuntu-toolchain-r-test
+#    packages:
+#      - g++-4.8
+
 script:
   - bash scripts/site-setup.sh
