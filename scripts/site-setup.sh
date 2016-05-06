@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # Ensure whole script fails if any step fails
 set -e
-# Print every line before executing
-set -v
 
 # run from root of repo
 composer install
