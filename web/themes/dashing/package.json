@@ -17,7 +17,7 @@
     "gulp": "^3.9.1",
     "gulp-help": "^1.6.1",
     "js-yaml": "^3.5.5",
-    "p2-theme-core": "^6.5.0",
+    "p2-theme-core": "^7.0.1",
     "singularitygs": "^1.7.0"
   }
 }
