@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Ensure whole script fails if any step fails
+set -e
+
 # run from root of repo
 composer install
 cd web/
