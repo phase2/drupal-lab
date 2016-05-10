@@ -12,8 +12,10 @@
  *   displayed after the main title tag that appears in the template.
  */
 #}
+{% set attributes = title_attributes.addClass('page-title') %}
+
 {{ title_prefix }}
 {% if title %}
-  <h1{{ title_attributes.addClass('page-title') }}>{{ title }}</h1>
+  {% include "@atoms/titles/h1.twig" %}
 {% endif %}
 {{ title_suffix }}
