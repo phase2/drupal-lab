@@ -1,36 +1,22 @@
 language: php
 php:
   - 5.5
-  - 5.6
   - 7.0
-
-sudo: false
-
-env:
-  global:
-    - SIMPLETEST_DB=sqlite://tmp/site.sqlite
-    - SIMPLETEST_BASE_URL="http://127.0.0.1:8080"
-  matrix:
-    - RELEASE=stable
-    - RELEASE=dev
-
 before_install:
-  - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-  - phpenv config-rm xdebug.ini
-  - composer --verbose self-update
-  - composer --version
+  - composer self-update --stable
+  - composer clear-cache
+  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && source ~/.nvm/nvm.sh && nvm install 4.2
 
-install:
-  - composer --verbose install
+# CXX : https://docs.travis-ci.com/user/languages/javascript-with-nodejs#Node.js-v4-(or-io.js-v3)-compiler-requirements
+# PHP_OPTIONS : Fixes inability to send email after site install ~ https://www.drupal.org/node/1826652#comment-9380565
+env:
+  - CXX=g++-4.8 PHP_OPTIONS="-d sendmail_path=`which true`"
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 
 script:
-  - if [[ $RELEASE = dev ]]; then composer --verbose require --no-update drupal/core:8.0.x-dev; fi;
-  - if [[ $RELEASE = dev ]]; then composer --verbose update; fi;
-  - cd $TRAVIS_BUILD_DIR/web
-  - ./../vendor/bin/drush site-install --verbose --yes --db-url=sqlite://tmp/site.sqlite
-  - ./../vendor/bin/drush runserver http://127.0.0.1:8080 &
-  - sleep 3
-  # Skip core/tests/Drupal/Tests/ComposerIntegrationTest.php because web/ has no composer.json
-  - ./../vendor/bin/phpunit -c core --exclude-group Composer
-  - ./../vendor/bin/drush
-  - ./../vendor/bin/drupal
+  - bash scripts/site-setup.sh

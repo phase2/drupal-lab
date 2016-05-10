@@ -38,7 +38,7 @@
         "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
-    "prefer-stable": false,
+    "prefer-stable": true,
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php"

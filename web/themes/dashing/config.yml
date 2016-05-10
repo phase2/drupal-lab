@@ -27,7 +27,6 @@ js:
   enabled: false
 patternLab:
   enabled: true
-  engine: php-twig
   src:
     root: pattern-lab/
     source: pattern-lab/source/
