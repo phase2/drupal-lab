@@ -61,6 +61,14 @@
   set description_classes = [
     'description',
     description_display == 'invisible' ? 'visually-hidden',
+    'text-muted',
   ]
 %}
-{% include "@atoms/forms/_form-element.twig" %}
+
+{% embed "@atoms/forms/_form-element.twig" %}
+
+  {% block label_before label %}
+
+  {% block label_after label %}
+
+{% endembed %}
