@@ -4,6 +4,7 @@ title: Card
 
 ####Variables
 
+- `element`
 - `attributes`
 - `card_header`
 - `card_image_top`
