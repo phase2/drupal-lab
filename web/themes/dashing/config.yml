@@ -69,13 +69,13 @@ browserSync:
   reloadDelay: 50
   reloadDebounce: 750
 drupal:
-  enabled: false
+  enabled: true
   # when these files change
   watch:
-    - template.php
+    - pattern-lab/source/_patterns/**/*.twig
     - templates/**
   # run this command
-  command: drush cc all
+  command: ../../../vendor/bin/drupal cr all
   # in this directory
   dir: ./
   inject:
