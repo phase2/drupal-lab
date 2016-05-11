@@ -3,7 +3,6 @@ php:
   - 5.5
   - 7.0
 before_install:
-  - composer self-update --stable
   - composer clear-cache
   - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && source ~/.nvm/nvm.sh && nvm install 4.2
 

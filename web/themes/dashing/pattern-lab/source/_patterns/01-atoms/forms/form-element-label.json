@@ -1,0 +1,10 @@
+{
+  "attributes": {
+    "Attribute()": {
+      "class": [
+        "form-item__label",
+        "font-weight-bold"
+      ]
+    }
+  }
+}

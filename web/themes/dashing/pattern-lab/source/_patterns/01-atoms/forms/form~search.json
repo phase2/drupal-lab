@@ -9,7 +9,14 @@
   },
   "children": {
     "join()": [
-      "atoms-form-element-text",
+      {
+        "include()": {
+          "pattern": "atoms-form-element-text",
+          "with": {
+            "description_display": false
+          }
+        }
+      },
       "atoms-container-submit"
     ]
   }

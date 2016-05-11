@@ -6,9 +6,7 @@
  * @see http://v4-alpha.getbootstrap.com/components/card/
  */
 #}
-{# @todo This is currently duplicating attributes for node teasers. #}
-{#       We don't necessarily want that, so fix it. #}
-<div{{ attributes.addClass(classes) }}>
+<{{ element ?: "div" }}{{ attributes.addClass(classes) }}>
 
   {% if card_header %}
     {% block card_header %}
@@ -80,7 +78,7 @@
     {% endblock %}
   {% endif %}
 
-</div>
+</{{ element ?: "div" }}>
 
 {# @todo remove this #}
 <style>
