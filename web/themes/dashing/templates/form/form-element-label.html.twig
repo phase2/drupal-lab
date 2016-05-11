@@ -14,12 +14,16 @@
 #}
 {%
   set classes = [
+    "form-item__label",
     title_display == 'after' ? 'option',
     title_display == 'invisible' ? 'visually-hidden',
     required ? 'js-form-required',
     required ? 'form-required',
+    "font-weight-bold",
   ]
 %}
+{% set attributes = attributes.addClass(classes) %}
+
 {% if title is not empty or required -%}
-  <label{{ attributes.addClass(classes) }}>{{ title }}</label>
+  {% include "@atoms/forms/form-element-label.twig" %}
 {%- endif %}

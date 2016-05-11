@@ -10,5 +10,27 @@
       ]
     }
   },
-  "children": "atoms-input-text"
+  "label_display": "before",
+  "label": {
+    "attributes": {
+      "Attribute()": {
+        "class": [
+          "form-item__label",
+          "font-weight-bold"
+        ]
+      }
+    }
+  },
+  "children": "atoms-input-text",
+  "description_display": "after",
+  "description": {
+    "attributes": {
+      "Attribute()": {
+        "class": [
+          "text-muted"
+        ]
+      }
+    },
+    "content": "Text form element description."
+  }
 }

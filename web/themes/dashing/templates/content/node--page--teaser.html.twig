@@ -64,33 +64,29 @@
  */
 #}
 {%
-  set node_classes = [
+  set classes = [
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    "card",
   ]
 %}
-<article{{ attributes.addClass(node_classes) }}>
 
-  {% embed "@molecules/cards/card.twig"
-    with {
-      "classes": [
-        "card"
-      ],
-      "url": url,
-      "title": label,
-      "card_links": true,
-      "card_footer": node.bundle|title
-    }
-  %}
-    {# These blocks are defined in the embeded template #}
-    {# and we override them right here: #}
-    {% block card_links %}
-      {{ content.links }}
-    {% endblock %}
-  {% endembed %}
-
-</article>
+{% embed "@molecules/cards/card.twig"
+  with {
+    "element": "article",
+    "url": url,
+    "title": label,
+    "card_links": true,
+    "card_footer": node.bundle|title
+  }
+%}
+  {# These blocks are defined in the embeded template #}
+  {# and we override them right here: #}
+  {% block card_links %}
+    {{ content.links }}
+  {% endblock %}
+{% endembed %}
