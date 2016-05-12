@@ -4,7 +4,7 @@ title: Docs
 
 #PatternLab
 
-1. [Core](00-core/code)
+1. [Core](00-core/core)
 2. [Engines](01-engines/engines)
 3. [Styleguidekits](02-styleguidekits/styleguidekits)
 4. [Starterkits](03-starterkits/starterkits)
