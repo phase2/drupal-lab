@@ -90,3 +90,7 @@ To install a new Drupal module, run this:
     composer require drupal/MODULE_NAME:8.*
 
 After enabling, do a `../vendor/bin/drupal config:export -y`.
+
+## Who's behind this?
+
+Built with love at [Phase2](https://phase2technology.com) by [Evan Lovely](https://twitter.com/EvanLovely), [Anne Sturdivant](https://twitter.com/anniegreens), and [Chris Bloom](https://twitter.com/illepic). Most of the work to make this possible happened over at the [Pattern Lab GitHub org](https://github.com/pattern-lab) with collaboration from [Dave Olsen](https://twitter.com/dmolsen) & [Aleksi Peebles](https://twitter.com/aleksip). Special thanks to Kellye Rogers and Frank Febbraro for supporting this internal project and wanting to share it with the community!
