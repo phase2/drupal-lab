@@ -2,6 +2,7 @@
 name: Dashing
 type: theme
 description: 'A base theme with sensible default CSS classes added and semantic HTML.'
+base theme: classy
 core: 8.x
 
 # Libraries
