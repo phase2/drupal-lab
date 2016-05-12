@@ -23,3 +23,9 @@ component-libraries:
   organisms:
     paths:
       - pattern-lab/source/_patterns/03-organisms
+  templates:
+    paths:
+      - pattern-lab/source/_patterns/04-templates
+  pages:
+    paths:
+      - pattern-lab/source/_patterns/05-pages

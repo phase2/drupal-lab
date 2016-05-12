@@ -2,9 +2,6 @@
 # Ensure whole script fails if any step fails
 set -e
 
-# Ensuring correct version of composer is installed. v1.1.0 breaks builds until [this PR](https://github.com/pattern-lab/unified-asset-installer/pull/1) is merged. 
-composer self-update 1.0.3
-
 # run from root of repo
 composer install
 cd web/

@@ -450,16 +450,16 @@
         },
         {
             "name": "pattern-lab/patternengine-twig",
-            "version": "v0.7.2",
+            "version": "v0.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pattern-lab/patternengine-php-twig.git",
-                "reference": "36242077104a0187deea0c00d18fef12861421bc"
+                "reference": "a97d76ce38c50b3f0d1c6580ef7e11bec4476030"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pattern-lab/patternengine-php-twig/zipball/36242077104a0187deea0c00d18fef12861421bc",
-                "reference": "36242077104a0187deea0c00d18fef12861421bc",
+                "url": "https://api.github.com/repos/pattern-lab/patternengine-php-twig/zipball/a97d76ce38c50b3f0d1c6580ef7e11bec4476030",
+                "reference": "a97d76ce38c50b3f0d1c6580ef7e11bec4476030",
                 "shasum": ""
             },
             "require": {
@@ -510,7 +510,7 @@
                 "pattern lab",
                 "twig"
             ],
-            "time": "2016-05-04 02:13:27"
+            "time": "2016-05-06 01:18:23"
         },
         {
             "name": "pattern-lab/styleguidekit-assets-default",
@@ -643,20 +643,20 @@
         },
         {
             "name": "pattern-lab/unified-asset-installer",
-            "version": "v0.5.5",
+            "version": "v0.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pattern-lab/unified-asset-installer.git",
-                "reference": "041235d51ad32beacf435fd6942d01029266de7e"
+                "reference": "ff77fa7032b310400bddc23583ca86d62afd117f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pattern-lab/unified-asset-installer/zipball/041235d51ad32beacf435fd6942d01029266de7e",
-                "reference": "041235d51ad32beacf435fd6942d01029266de7e",
+                "url": "https://api.github.com/repos/pattern-lab/unified-asset-installer/zipball/ff77fa7032b310400bddc23583ca86d62afd117f",
+                "reference": "ff77fa7032b310400bddc23583ca86d62afd117f",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0",
+                "composer-plugin-api": "^1.0",
                 "php": ">=5.3.6"
             },
             "type": "composer-installer",
@@ -688,7 +688,7 @@
                 "pattern lab",
                 "plugins"
             ],
-            "time": "2015-03-02 14:02:04"
+            "time": "2016-05-12 00:32:50"
         },
         {
             "name": "pimple/pimple",
@@ -936,7 +936,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.5",
+            "version": "v2.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -1099,15 +1099,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aleksip/plugin-data-transform.git",
-                "reference": "0ca78f235acfc63796d97c5c675d18881672fe4d"
+                "reference": "527b5cec2cc44fb9d6f300003beff26cbb81127f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aleksip/plugin-data-transform/zipball/0ca78f235acfc63796d97c5c675d18881672fe4d",
-                "reference": "0ca78f235acfc63796d97c5c675d18881672fe4d",
+                "url": "https://api.github.com/repos/aleksip/plugin-data-transform/zipball/527b5cec2cc44fb9d6f300003beff26cbb81127f",
+                "reference": "527b5cec2cc44fb9d6f300003beff26cbb81127f",
                 "shasum": ""
             },
             "require": {
+                "pattern-lab/patternengine-twig": "0.*",
                 "php": ">=5.5.9"
             },
             "type": "patternlab-plugin",
@@ -1135,7 +1136,7 @@
                 "pattern lab",
                 "plugin"
             ],
-            "time": "2016-01-13 14:21:58"
+            "time": "2016-05-11 14:38:38"
         }
     ],
     "aliases": [],
