@@ -19,10 +19,12 @@ When it asks if you want to merge or replace stuff, select merge.
 
 ## Usage
 
-### Run Drupal Server
+### Run Drupal & Pattern Lab Servers
 
-- Run `../vendor/bin/drupal server` in `web/` OR:
-- Set up your own Apache server to point towards the `web/` directory.
+In two Terminal tabs, run:
+
+1. Run `../vendor/bin/drupal server` in `web/`
+1. Run `npm start` in `web/themes/dashing/`
 
 ### Credentials
 
