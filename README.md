@@ -1,3 +1,5 @@
+[![Join the chat at https://gitter.im/pattern-lab/php](https://badges.gitter.im/pattern-lab/php.png)](https://gitter.im/pattern-lab/php) ~ [Docs](https://github.com/phase2/drupal-lab/tree/master/docs)
+
 # Drupal Lab
 
 A sample Drupal 8 site with a Pattern Lab Twig powered theme.
