@@ -1,4 +1,4 @@
-[![Join the chat at https://gitter.im/pattern-lab/php](https://badges.gitter.im/pattern-lab/php.png)](https://gitter.im/pattern-lab/php) ~ [Docs](https://github.com/phase2/drupal-lab/tree/master/docs)
+[![Join the chat at https://gitter.im/pattern-lab/php](https://badges.gitter.im/pattern-lab/php.png)](https://gitter.im/pattern-lab/php) [![Docs](https://img.shields.io/badge/docs-master-brightgreen.svg?style=flat)](http://drupal-lab.readthedocs.io)
 
 # Drupal Lab
 
