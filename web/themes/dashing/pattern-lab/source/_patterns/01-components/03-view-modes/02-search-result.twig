@@ -1,0 +1,11 @@
+<article class="node node--article node--search-result" role="article">
+  <div class="layout-slat">
+    <div class="layout-slat__media">
+      <a href="{{ url }}">{% include "base-icon-image" %}</a>
+    </div>
+    <div class="layout-slat__content">
+      <h3 class="node__title"><a href="{{ url }}">{{ title }}</a></h3>
+      {{ summary | raw }}
+    </div>
+  </div>
+</article>

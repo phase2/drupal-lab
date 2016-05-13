@@ -1,27 +1,64 @@
 {
-  "title": "Title",
-  "label": "Label",
-  "text": "Text",
-  "value": "Value",
-  "site_logo": "../../images/logo.png",
-  "site_name": "Site Name",
-  "site_slogan": "Site Slogan",
-  "name": "Name",
-  "author_name": "Author Name",
-  "author_picture": "<img src=\"../../images/avatar.png\" />",
-  "display_submitted": true,
-  "date": "June 18, 2013",
+  "siteName": "Site Name",
+  "htmlClass": "",
+  "bodyClass": "",
+  "adminView": false,
+  "pageTitle": "Page Title",
   "url": "#",
-  "description": "Description - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
-  "snippet": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "legend": {
-    "title": "Legend Title"
+  "title": "Title",
+  "summary": "<p>This is the summary, which can contain <abbr title='Hyper Text Markup Language'>HTML</abbr> markup. It should be 600 characters or less.</p>",
+  "file": {
+    "icon": "../../drupal/images/application-pdf.png",
+    "mime": "application/pdf",
+    "name": "file name",
+    "size": "115.83 KB"
   },
-  "submitted": "Submitted at some point",
-  "read_more": "Read more",
-  "list_type": "ul",
-  "image_small": "../../images/320x180.png",
-  "image_medium": "../../images/568x320.png",
-  "image_large": "../../images/800x600.png"
+  "img": {
+    "icon": {
+      "src": "http://fpoimg.com/48x48?text=Icon",
+      "alt": "Icon"
+    },
+    "thumbnail": {
+      "src": "http://fpoimg.com/140x105?text=Thumbnail 4:3",
+      "alt": "Thumbnail 4:3"
+    },
+    "portrait": {
+      "src": "http://fpoimg.com/300x400?text=Portrait 3:4",
+      "alt": "Portrait 3:4"
+    },
+    "landscape": {
+      "src": "http://fpoimg.com/800x450?text=Landscape 16:9",
+      "alt": "Landscape 16:9"
+    }
+  },
+  "year": {
+    "long": "2013",
+    "short": "13"
+  },
+  "month": {
+    "long": "February",
+    "short": "Feb",
+    "digit": "02"
+  },
+  "weekday": {
+    "long": "Monday",
+    "short": "Mon"
+  },
+  "day": {
+    "long": "10",
+    "short": "10",
+    "ordinal": "th"
+  },
+  "hour": {
+    "long": "01",
+    "short": "1",
+    "military": "13",
+    "ampm": "pm"
+  },
+  "minute": {
+    "long": "20",
+    "short": "20"
+  },
+  "seconds": "31",
+  "body": "<p>This is the body content, which can contain <abbr title='Hyper Text Markup Language'>HTML</abbr> markup. There is no limit to how long this content can be.</p>"
 }
