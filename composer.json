@@ -21,7 +21,7 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "8.*",
         "drush/drush": "~8.0",
-        "drupal/console": "~0.10",
+        "drupal/console": "1.x",
         "drupal/devel": "8.*",
         "drupal/components": "8.x"
     },
