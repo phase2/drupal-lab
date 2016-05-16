@@ -25,7 +25,7 @@ When it asks if you want to merge or replace stuff, select merge.
 
 In two Terminal tabs, run:
 
-1. Run `../vendor/bin/drupal server` in `web/`
+1. Run `composer run-script server`
 1. Run `npm start` in `web/themes/dashing/`
 
 ### Drupal Credentials
