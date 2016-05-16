@@ -4,22 +4,26 @@ set -e
 
 # run from root of repo
 composer install
-cd web/
+#cd web/
 
 echo "Installing site..."
-../vendor/bin/drush site-install --account-name=admin --account-pass=admin  -y
-echo ""
-
-echo "Creating content..."
-../vendor/bin/drupal chain --file=../scripts/create-content.yml
+composer exec drupal -- chain --file=../scripts/drupal-install.yml --root=web
+#../vendor/bin/drush site-install --account-name=admin --account-pass=admin  -y
 echo ""
 
 echo "Importing configuration..."
-../vendor/bin/drupal config:import -y
+composer exec drupal -- config:import -y --root=web
+#../vendor/bin/drupal config:import -y
+echo ""
+
+echo "Creating content..."
+composer exec drupal -- chain --file=../scripts/create-content.yml --root=web
+#../vendor/bin/drupal chain --file=../scripts/create-content.yml
 echo ""
 
 echo "Rebuilding cache..."
-../vendor/bin/drupal cache:rebuild all
+composer exec drupal -- cache:rebuild all --root=web
+#../vendor/bin/drupal cache:rebuild all
 echo ""
 
 echo "Setting up Pattern Lab..."

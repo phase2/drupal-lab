@@ -13,6 +13,10 @@ A sample Drupal 8 site with a Pattern Lab Twig powered theme.
 - `composer` installed
 - `npm` installed
 
+### Local commands
+
+- Drupal console is run locally. Set it up by running `[sudo] ./vendor/bin/drupal init` and following the instructions
+
 ### Site Install
 
 		bash scripts/site-setup.sh
