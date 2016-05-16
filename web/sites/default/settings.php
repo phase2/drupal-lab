@@ -244,7 +244,8 @@
  *   );
  * @endcode
  */
-$config_directories = array();
+
+$config_directories['sync'] = 'sites/default/config/sync';
 
 /**
  * Settings:
@@ -724,4 +725,4 @@ $databases['default']['default'] = array (
   'driver' => 'sqlite',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_gxxSU8KwE7YpRold-oZ2ZlEB7AkwtH0e1hizMR4CWq6FG0p9vbbuJKzqevot1hF-NnRSDjm2XA/sync';
+
