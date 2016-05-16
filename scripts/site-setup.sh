@@ -35,5 +35,5 @@ echo ""
 echo "Compiling..."
 npm run compile
 echo "All done; login is 'admin:admin'."
-echo "Drupal Server: run '../vendor/bin/drupal server' in 'web/' "
+echo "Drupal Server: run 'composer run-script server'"
 echo "Pattern Lab Server: run 'npm start' in 'web/themes/dashing/' "
