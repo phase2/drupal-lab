@@ -27,7 +27,8 @@ composer exec drupal -- cache:rebuild all --root=web
 echo ""
 
 echo "Setting up Pattern Lab..."
-cd themes/dashing/pattern-lab
+cd web/themes/dashing/pattern-lab
+#cd themes/dashing/pattern-lab
 composer install
 echo ""
 

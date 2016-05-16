@@ -244,8 +244,7 @@
  *   );
  * @endcode
  */
-
-$config_directories['sync'] = 'sites/default/config/sync';
+$config_directories = array();
 
 /**
  * Settings:
@@ -286,7 +285,7 @@ $config_directories['sync'] = 'sites/default/config/sync';
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '6B7kB9BPfT9bfHUBUtHSfKfEyC08Xj2mqw3H9JiWQ5Mu3TH8I9pAswTDR6QtlflvAayyHafm2Q';
+$settings['hash_salt'] = '16vgE_cqnsFtxIthfthFunCCBpmUV0qiE9Rew_Mv3uZrR4seqJsI7HElKVeezMQRGbF0wMbI8A';
 
 /**
  * Deployment identifier.
@@ -715,9 +714,9 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
 $databases['default']['default'] = array (
   'database' => 'sites/default/files/.ht.sqlite',
   'prefix' => '',
@@ -725,4 +724,3 @@ $databases['default']['default'] = array (
   'driver' => 'sqlite',
 );
 $settings['install_profile'] = 'standard';
-
