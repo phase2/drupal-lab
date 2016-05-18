@@ -4,7 +4,7 @@
 
 A sample Drupal 8 site with a Pattern Lab Twig powered theme.
 
-**All commands starting with `bash` are ran from root of repo; all that start with `drupal` are ran from `web/`**
+**All commands starting with `bash` are run from root of repo; all that start with `drupal` are ran from `web/`**
 
 ## Setup
 
@@ -25,10 +25,10 @@ When it asks if you want to merge or replace stuff, select merge.
 
 In two Terminal tabs, run:
 
-1. Run `../vendor/bin/drupal server` in `web/`
+1. Run `composer run-script server`
 1. Run `npm start` in `web/themes/dashing/`
 
-### Credentials
+### Drupal Credentials
 
 - Username: `admin`
 - Password: `admin`
@@ -43,7 +43,7 @@ In two Terminal tabs, run:
 
 ### Theme & Pattern Lab
 
-All commands ran from root of theme in `web/themes/dashing/`. An `npm install` was ran in `site-setup.sh` script, run `npm install` if you don't see `node_modules/` or have errors.
+All commands are run from root of theme in `web/themes/dashing/`. An `npm install` was ran in `site-setup.sh` script, run `npm install` if you don't see `node_modules/` or have errors.
 
 To compile theme (CSS & Pattern Lab):
 
@@ -70,7 +70,7 @@ Here's a collection of the tools used to build this site; go make something cool
 	- [Drupal Twig Components plugin](https://github.com/pattern-lab/plugin-drupal-twig-components) - this adds extra functionality to Pattern Lab's Twig Engine, and let's use the essential `link` & `trans` Twig Functions; among many more!
 	- [Data Transform plugin](https://github.com/aleksip/plugin-data-transform) - this super charges the JSON/YAML Pattern Sidecar data files to effectively let you pre-process data before rendering Twig templates. Incredibly powerful & flexible. Made by the awesome [Aleksi Peebles](http://www.aleksip.net).
 
-The above tools give us a Twig powered, Drupal aware Pattern Lab and can be spun up with:
+The above tools give us a Twig powered, Drupal-aware Pattern Lab and can be spun up with:
 	
 		composer create-project pattern-lab/edition-drupal-standard
 

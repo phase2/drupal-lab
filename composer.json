@@ -45,6 +45,7 @@
         ]
     },
     "scripts": {
+        "server": "drupal server --root=web/",
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::buildScaffold",
