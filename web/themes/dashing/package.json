@@ -7,12 +7,13 @@
     "compile": "gulp clean && gulp compile",
     "start": "gulp clean && gulp compile && gulp",
     "test": "gulp validate",
-    "postinstall": "find node_modules/ -name \"*.info\" -type f -delete"
+    "postinstall": "find node_modules/ -name \"*.info\" -type f -delete && bower install"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "twbs/bootstrap#v4-dev",
+    "bower": "^1.7.9",
     "breakpoint-sass": "^2.7.0",
     "gulp": "^3.9.1",
     "gulp-help": "^1.6.1",
