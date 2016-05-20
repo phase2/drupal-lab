@@ -37,7 +37,7 @@
         "pattern-lab/drupal-twig-components": "^0.1.1"
     },
     "require-dev": {
-        "aleksip/plugin-data-transform": "dev-master"
+        "aleksip/plugin-data-transform": "0.10.1"
     },
     "scripts": {
         "post-create-project-cmd": [
