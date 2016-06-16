@@ -74,14 +74,7 @@ The above tools give us a Twig powered, Drupal-aware Pattern Lab and can be spun
 	
 		composer create-project pattern-lab/edition-drupal-standard
 
-We've [made a Yeoman Generator](https://github.com/phase2/generator-p2-theme) that allows you to answer some questions and then creates a Drupal Theme for 7 or 8 that integrates the above Pattern Lab Drupal Edition along with [Gulp tasks](https://github.com/phase2/p2-theme-core) for common theme needs. To install and use:
-
-		npm install --global yo generator-p2-theme
-		mkdir awesomesauce_theme
-		cd awesomesauce_theme
-		yo p2-theme
-
-The Drupal Theme (`drush dl patternlab`) we've released is basically the result of using the above Yeoman Generator.
+We've made a Drupal theme called [Pattern Lab Starter](https://github.com/phase2/pattern-lab-starter) that integrates the above Pattern Lab Drupal Edition along with [Gulp tasks](https://github.com/phase2/p2-theme-core) for common theme needs. 
 
 ## Configuration
 
