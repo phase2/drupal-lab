@@ -11,7 +11,7 @@ A sample Drupal 8 site with a Pattern Lab Twig powered theme.
 ### Prerequisites
 
 - `composer` installed
-- `npm` installed
+- node js installed - supported node versions: 0.12.x, 4.x, 5.x, and 6.x using npm 2.x or 3.x.
 
 ### Site Install
 
